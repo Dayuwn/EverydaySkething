@@ -1,0 +1,12 @@
+PODS:
+  - Stormpath (2.0.1)
+
+DEPENDENCIES:
+  - Stormpath (~> 2.0)
+
+SPEC CHECKSUMS:
+  Stormpath: df23f5ed9837f84091015287680c41110b1f8f1c
+
+PODFILE CHECKSUM: 346f1b851a900c973f12b48ccc5575acd4e0fb7e
+
+COCOAPODS: 1.1.1
