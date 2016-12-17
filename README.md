@@ -15,6 +15,7 @@ Technical functionalities :
     - Handling user navigation and login/signup fields
 
   - Maybe an Android version to come ?
+
 Tools used:
   - Git
   - Heroku
