@@ -123,6 +123,226 @@
             </objects>
             <point key="canvasLocation" x="1072.8" y="137.18140929535232"/>
         </scene>
+        <!--Everyday Sketching-->
+        <scene sceneID="CDD-LQ-8lF">
+            <objects>
+                <viewController storyboardIdentifier="ESMainViewController" title="Everyday Sketching" id="lZj-5e-qHM" customClass="ESMainViewController" customModule="Everyday_Sketching" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m5d-2r-aPO"/>
+                        <viewControllerLayoutGuide type="bottom" id="0A5-Kf-aIL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fWJ-Y5-NI0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sketch Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0H-g9-50T">
+                                <rect key="frame" x="140" y="82" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.94230769230769229" blue="0.94230769230769229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dE8-XY-c9m">
+                                <rect key="frame" x="53" y="111" width="268" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Easy"/>
+                                    <segment title="Intermediate"/>
+                                    <segment title="Hard"/>
+                                </segments>
+                                <color key="tintColor" red="0.58033972978591919" green="0.58042585849761963" blue="0.58032077550888062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeDifficulty:" destination="lZj-5e-qHM" eventType="valueChanged" id="P8T-tp-njr"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Papers" translatesAutoresizingMaskIntoConstraints="NO" id="AEm-Af-20b">
+                                <rect key="frame" x="7" y="150" width="365" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEM-H3-tDh">
+                                <rect key="frame" x="42" y="184" width="293" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYK-Gp-m4B">
+                                <rect key="frame" x="169" y="483" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="12"/>
+                                <state key="normal" title="Source">
+                                    <color key="titleColor" red="0.81953555345535278" green="0.81965416669845581" blue="0.81950962543487549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sourceButtonPressed:" destination="lZj-5e-qHM" eventType="touchUpInside" id="0h7-Yb-iPf"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-gx-eWI">
+                                <rect key="frame" x="122" y="537" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86659049987792969" green="0.86671549081802368" blue="0.86656308174133301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsm-mA-zl3">
+                                <rect key="frame" x="148" y="538" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="lZj-5e-qHM" eventType="touchUpInside" id="e6l-7W-azx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sketch Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYq-Rh-wd0">
+                                <rect key="frame" x="16" y="569" width="67" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty Star" translatesAutoresizingMaskIntoConstraints="NO" id="NMH-d6-Ywj">
+                                <rect key="frame" x="16" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty Star" translatesAutoresizingMaskIntoConstraints="NO" id="qsE-bl-5aE">
+                                <rect key="frame" x="29" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty Star" translatesAutoresizingMaskIntoConstraints="NO" id="h3H-Yk-Rpo">
+                                <rect key="frame" x="42" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty Star" translatesAutoresizingMaskIntoConstraints="NO" id="bIg-B6-TrX">
+                                <rect key="frame" x="55" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Empty Star" translatesAutoresizingMaskIntoConstraints="NO" id="WMe-t2-M9Z">
+                                <rect key="frame" x="68" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate it !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLT-DZ-exV">
+                                <rect key="frame" x="321" y="569" width="38" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfh-GN-NEn">
+                                <rect key="frame" x="349" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="0.2049049120795107" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="Empty Star"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYM-X8-wTz">
+                                <rect key="frame" x="336" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="0.2049049120795107" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="Empty Star"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oG6-hD-8N9">
+                                <rect key="frame" x="323" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="0.2049049120795107" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="Empty Star"/>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzf-qD-ndv">
+                                <rect key="frame" x="310" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="0.2049049120795107" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="Empty Star"/>
+                                <connections>
+                                    <action selector="userRatingStarPressed:" destination="lZj-5e-qHM" eventType="touchUpInside" id="RgS-yF-525"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ues-lX-XA3">
+                                <rect key="frame" x="297" y="584" width="10.5" height="11.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="0.20077169342507645" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="Empty Star"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Everyday Sketching" id="xKQ-Bo-64t">
+                        <barButtonItem key="leftBarButtonItem" image="Param Icon" id="acK-RS-ejh">
+                            <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="paramButtonPressed:" destination="lZj-5e-qHM" id="rTF-AR-j9u"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="2tx-Cp-TKe">
+                            <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="actionButtonPressed:" destination="lZj-5e-qHM" id="XVd-VG-aae"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="startButtonBackground" destination="oAQ-gx-eWI" id="N3i-Xb-RFv"/>
+                        <outletCollection property="currentRatingStars" destination="WMe-t2-M9Z" collectionClass="NSMutableArray" id="4nB-BL-RUE"/>
+                        <outletCollection property="userRatingStars" destination="QYM-X8-wTz" collectionClass="NSMutableArray" id="Ery-bf-hAU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fko-wn-VCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Item" id="X7d-9i-3a1"/>
+            </objects>
+            <point key="canvasLocation" x="4861.6000000000004" y="-167.76611694152925"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M6K-Xf-626">
+            <objects>
+                <viewController id="hgF-L4-mzr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jvA-g2-hKz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ocz-Ff-jxg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HvU-es-CmP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LqC-Tr-ksd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ayk-XL-oQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4862" y="-905"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eqs-VK-k88">
+            <objects>
+                <navigationController id="8lR-Qc-x6f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Home Icon" id="g5w-4n-4bV">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="V9a-AU-TrI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lZj-5e-qHM" kind="relationship" relationship="rootViewController" id="7yq-if-J72"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aay-jK-cpN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3970" y="-167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l9u-bx-oSs">
+            <objects>
+                <viewController id="FHA-0N-tpf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zRb-vS-dod"/>
+                        <viewControllerLayoutGuide type="bottom" id="gDT-8y-5Qy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IDi-sZ-Y8u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="06B-2H-1I0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzC-tp-jF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4862" y="610"/>
+        </scene>
         <!--Signup View Controller-->
         <scene sceneID="Vof-wy-NmZ">
             <objects>
@@ -432,8 +652,94 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="137.18140929535232"/>
         </scene>
+        <!--AppNavController-->
+        <scene sceneID="gsr-K6-znZ">
+            <objects>
+                <tabBarController storyboardIdentifier="AppNavController" title="AppNavController" automaticallyAdjustsScrollViewInsets="NO" id="5JG-Uf-2zV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Everyday Sketching" id="K0t-Dq-Va4">
+                        <barButtonItem key="leftBarButtonItem" image="Param Icon" id="a2A-TD-U0l">
+                            <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="uc3-1n-0mZ">
+                            <color key="tintColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="5sK-Yi-IRu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="MSs-nD-4Il" kind="relationship" relationship="viewControllers" id="je1-wP-JRJ"/>
+                        <segue destination="8lR-Qc-x6f" kind="relationship" relationship="viewControllers" id="c5z-qU-GS6"/>
+                        <segue destination="J2R-xk-0YA" kind="relationship" relationship="viewControllers" id="AZN-BH-Je9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4u-bF-wQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2991" y="-168"/>
+        </scene>
+        <!--Ranking-->
+        <scene sceneID="ACG-Em-gxb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J2R-xk-0YA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ranking" image="Cup Icon" id="uOO-Vt-odk">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Awx-Yo-5B3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FHA-0N-tpf" kind="relationship" relationship="rootViewController" id="Cia-PV-9KB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aj8-bK-aPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3969" y="611"/>
+        </scene>
+        <!--Comments-->
+        <scene sceneID="ZeW-Ry-73e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MSs-nD-4Il" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Comments" image="Com Icon" id="Xm7-IE-9ea">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rAo-dY-Vtd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hgF-L4-mzr" kind="relationship" relationship="rootViewController" id="IsU-Ml-GwU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fL-eO-joL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3968.8000000000002" y="-905.3973013493254"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background" width="187" height="333"/>
+        <image name="Com Icon" width="26" height="23"/>
+        <image name="Cup Icon" width="22" height="21"/>
+        <image name="Empty Star" width="13" height="14"/>
+        <image name="Home Icon" width="40" height="40"/>
+        <image name="Papers" width="375" height="378"/>
+        <image name="Param Icon" width="27" height="26"/>
     </resources>
 </document>

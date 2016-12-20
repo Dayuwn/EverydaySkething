@@ -54,7 +54,7 @@ class ESSignupViewController: UIViewController {
                 return
             }
             
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ESHostViewController")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ESMainViewController")
             let navigationController = UINavigationController(rootViewController: vc!)
             self.present(navigationController, animated: true, completion: nil)
             

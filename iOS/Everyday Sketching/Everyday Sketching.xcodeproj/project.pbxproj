@@ -16,6 +16,7 @@
 		7D3AA29B1DFD8CF3006EA4AD /* ESLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AA29A1DFD8CF3006EA4AD /* ESLoginViewController.swift */; };
 		7DF144B11E057C85005584D1 /* HError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF144B01E057C85005584D1 /* HError.swift */; };
 		7DF144B31E058224005584D1 /* ESSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF144B21E058224005584D1 /* ESSignupViewController.swift */; };
+		7DF144B61E06E3B2005584D1 /* ESMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF144B51E06E3B2005584D1 /* ESMainViewController.swift */; };
 		81DA03FCC438B501E320F46B /* Pods_Everyday_Sketching.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6E94848B24EAC5B7225E72 /* Pods_Everyday_Sketching.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		7D3AA29A1DFD8CF3006EA4AD /* ESLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESLoginViewController.swift; path = "ES - Onboarding/ESLoginViewController.swift"; sourceTree = "<group>"; };
 		7DF144B01E057C85005584D1 /* HError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HError.swift; path = helpers/HError.swift; sourceTree = "<group>"; };
 		7DF144B21E058224005584D1 /* ESSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESSignupViewController.swift; path = "ES - Onboarding/ESSignupViewController.swift"; sourceTree = "<group>"; };
+		7DF144B51E06E3B2005584D1 /* ESMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESMainViewController.swift; path = "ES - App/ESMainViewController.swift"; sourceTree = "<group>"; };
 		91B584FB2F1DCCA9DD6FD7DB /* Pods-Everyday Sketching.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Everyday Sketching.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Everyday Sketching/Pods-Everyday Sketching.debug.xcconfig"; sourceTree = "<group>"; };
 		EA802FFCD3163F348CC7B983 /* Pods-Everyday Sketching.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Everyday Sketching.release.xcconfig"; path = "Pods/Target Support Files/Pods-Everyday Sketching/Pods-Everyday Sketching.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 		7D3AA27B1DFD681C006EA4AD /* Everyday Sketching */ = {
 			isa = PBXGroup;
 			children = (
+				7DF144B41E06E37E005584D1 /* ES - App */,
 				7DF144AF1E057C1E005584D1 /* helpers */,
 				7D3AA2971DFD829E006EA4AD /* ES - Onboarding */,
 				7D3AA27C1DFD681C006EA4AD /* AppDelegate.swift */,
@@ -110,6 +113,14 @@
 				7DF144B01E057C85005584D1 /* HError.swift */,
 			);
 			name = helpers;
+			sourceTree = "<group>";
+		};
+		7DF144B41E06E37E005584D1 /* ES - App */ = {
+			isa = PBXGroup;
+			children = (
+				7DF144B51E06E3B2005584D1 /* ESMainViewController.swift */,
+			);
+			name = "ES - App";
 			sourceTree = "<group>";
 		};
 		8EB41E6DF50C676E2B8FC2B2 /* Frameworks */ = {
@@ -247,6 +258,7 @@
 				7DF144B31E058224005584D1 /* ESSignupViewController.swift in Sources */,
 				7D3AA2991DFD82C7006EA4AD /* ESHostViewController.swift in Sources */,
 				7D3AA27F1DFD681C006EA4AD /* ViewController.swift in Sources */,
+				7DF144B61E06E3B2005584D1 /* ESMainViewController.swift in Sources */,
 				7D3AA29B1DFD8CF3006EA4AD /* ESLoginViewController.swift in Sources */,
 				7DF144B11E057C85005584D1 /* HError.swift in Sources */,
 				7D3AA27D1DFD681C006EA4AD /* AppDelegate.swift in Sources */,
