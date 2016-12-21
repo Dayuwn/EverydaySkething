@@ -143,12 +143,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dE8-XY-c9m">
-                                <rect key="frame" x="53" y="111" width="268" height="29"/>
+                                <rect key="frame" x="50" y="111" width="275" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Easy"/>
+                                    <segment title="Beginner"/>
                                     <segment title="Intermediate"/>
-                                    <segment title="Hard"/>
+                                    <segment title="Advanced"/>
                                 </segments>
                                 <color key="tintColor" red="0.58033972978591919" green="0.58042585849761963" blue="0.58032077550888062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -160,7 +160,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEM-H3-tDh">
-                                <rect key="frame" x="42" y="184" width="293" height="291"/>
+                                <rect key="frame" x="42" y="184" width="295" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYK-Gp-m4B">
@@ -276,6 +276,8 @@
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="difficultyControl" destination="dE8-XY-c9m" id="sfK-ld-0br"/>
+                        <outlet property="sketchImageView" destination="MEM-H3-tDh" id="sxT-Ge-UqZ"/>
                         <outlet property="startButtonBackground" destination="oAQ-gx-eWI" id="N3i-Xb-RFv"/>
                         <outletCollection property="currentRatingStars" destination="WMe-t2-M9Z" collectionClass="NSMutableArray" id="4nB-BL-RUE"/>
                         <outletCollection property="userRatingStars" destination="QYM-X8-wTz" collectionClass="NSMutableArray" id="Ery-bf-hAU"/>

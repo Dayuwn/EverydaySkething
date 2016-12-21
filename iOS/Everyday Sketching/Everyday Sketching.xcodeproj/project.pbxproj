@@ -14,6 +14,7 @@
 		7D3AA2941DFD8142006EA4AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3AA2921DFD8142006EA4AD /* LaunchScreen.storyboard */; };
 		7D3AA2991DFD82C7006EA4AD /* ESHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AA2981DFD82C7006EA4AD /* ESHostViewController.swift */; };
 		7D3AA29B1DFD8CF3006EA4AD /* ESLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3AA29A1DFD8CF3006EA4AD /* ESLoginViewController.swift */; };
+		7DAFE82E1E0AB05F008F6DB2 /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAFE82D1E0AB05F008F6DB2 /* ApiEndpoints.swift */; };
 		7DF144B11E057C85005584D1 /* HError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF144B01E057C85005584D1 /* HError.swift */; };
 		7DF144B31E058224005584D1 /* ESSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF144B21E058224005584D1 /* ESSignupViewController.swift */; };
 		7DF144B61E06E3B2005584D1 /* ESMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF144B51E06E3B2005584D1 /* ESMainViewController.swift */; };
@@ -33,6 +34,7 @@
 		7D3AA2931DFD8142006EA4AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D3AA2981DFD82C7006EA4AD /* ESHostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESHostViewController.swift; path = "ES - Onboarding/ESHostViewController.swift"; sourceTree = "<group>"; };
 		7D3AA29A1DFD8CF3006EA4AD /* ESLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESLoginViewController.swift; path = "ES - Onboarding/ESLoginViewController.swift"; sourceTree = "<group>"; };
+		7DAFE82D1E0AB05F008F6DB2 /* ApiEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiEndpoints.swift; path = config/ApiEndpoints.swift; sourceTree = "<group>"; };
 		7DF144B01E057C85005584D1 /* HError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HError.swift; path = helpers/HError.swift; sourceTree = "<group>"; };
 		7DF144B21E058224005584D1 /* ESSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESSignupViewController.swift; path = "ES - Onboarding/ESSignupViewController.swift"; sourceTree = "<group>"; };
 		7DF144B51E06E3B2005584D1 /* ESMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ESMainViewController.swift; path = "ES - App/ESMainViewController.swift"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		7D3AA27B1DFD681C006EA4AD /* Everyday Sketching */ = {
 			isa = PBXGroup;
 			children = (
+				7DAFE82C1E0AB02F008F6DB2 /* config */,
 				7DF144B41E06E37E005584D1 /* ES - App */,
 				7DF144AF1E057C1E005584D1 /* helpers */,
 				7D3AA2971DFD829E006EA4AD /* ES - Onboarding */,
@@ -105,6 +108,14 @@
 				7D3AA29A1DFD8CF3006EA4AD /* ESLoginViewController.swift */,
 			);
 			name = "ES - Onboarding";
+			sourceTree = "<group>";
+		};
+		7DAFE82C1E0AB02F008F6DB2 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				7DAFE82D1E0AB05F008F6DB2 /* ApiEndpoints.swift */,
+			);
+			name = config;
 			sourceTree = "<group>";
 		};
 		7DF144AF1E057C1E005584D1 /* helpers */ = {
@@ -255,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DAFE82E1E0AB05F008F6DB2 /* ApiEndpoints.swift in Sources */,
 				7DF144B31E058224005584D1 /* ESSignupViewController.swift in Sources */,
 				7D3AA2991DFD82C7006EA4AD /* ESHostViewController.swift in Sources */,
 				7D3AA27F1DFD681C006EA4AD /* ViewController.swift in Sources */,

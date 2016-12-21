@@ -37,10 +37,9 @@ class ESLoginViewController: UIViewController {
             }
             
             // Pushes to main view if user is logged in
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ESMainViewController")
-            let navigationController = UINavigationController(rootViewController: vc!)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AppNavController") as! UITabBarController
+            self.present(vc, animated: true, completion: nil)
             
-            self.present(navigationController, animated: true, completion: nil)
             return
         }
     }

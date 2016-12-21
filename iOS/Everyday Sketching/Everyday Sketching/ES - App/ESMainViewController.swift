@@ -10,9 +10,13 @@ import UIKit
 
 class ESMainViewController: UIViewController {
     
+    @IBOutlet weak var sketchImageView: UIImageView!
     @IBOutlet weak var startButtonBackground: UIView!
+    @IBOutlet weak var difficultyControl: UISegmentedControl!
     @IBOutlet var currentRatingStars: [UIImageView]!
     @IBOutlet var userRatingStars: [UIButton]!
+    
+    var sketchImages = [UIImage]()
     
     // MARK: View Lifecycle
     
@@ -30,6 +34,29 @@ class ESMainViewController: UIViewController {
         startButtonBackground.layer.cornerRadius = 8
         startButtonBackground.layer.borderColor = UIColor.black.cgColor
         startButtonBackground.layer.borderWidth = 1
+        
+        performSelector(inBackground: #selector(fetchSketches), with: nil)
+    }
+    
+    func fetchSketches() {
+        let difficultyEndpoints = ["beginner", "intermediate", "advanced"]
+        
+        for difficultyEndpoint in difficultyEndpoints {
+            if let url = URL(string: ApiEndpoints.images  + difficultyEndpoint) {
+                if let data = try? Data(contentsOf: url) {
+                    if let image = UIImage(data: data) {
+                        sketchImages.append(image)
+                    }
+                }
+            }
+        }
+        
+        performSelector(onMainThread: #selector(updateSketch), with: nil, waitUntilDone: false)
+    }
+    
+    func updateSketch() {
+        let difficulty = difficultyControl.selectedSegmentIndex
+        sketchImageView.image = sketchImages[difficulty]
     }
     
     // MARK: User Interaction
@@ -43,7 +70,7 @@ class ESMainViewController: UIViewController {
     }
     
     @IBAction func changeDifficulty(_ sender: UISegmentedControl) {
-    
+        updateSketch()
     }
     
     @IBAction func sourceButtonPressed(_ sender: UIButton) {

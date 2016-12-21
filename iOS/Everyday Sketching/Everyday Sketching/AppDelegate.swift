@@ -26,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set translucent. (Default value is already true, so this can be removed if desired.)
         //UINavigationBar.appearance().isTranslucent = true
 
-        StormpathConfiguration.defaultConfiguration.APIURL = URL(string: "http://stormpath-users.herokuapp.com")!
+        //StormpathConfiguration.defaultConfiguration.APIURL = URL(string: "http://stormpath-users.herokuapp.com")!
+        StormpathConfiguration.defaultConfiguration.APIURL = URL(string: "http://localhost:3000")!
         
         return true
     }

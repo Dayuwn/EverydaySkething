@@ -19,20 +19,17 @@ class ESHostViewController: UIViewController {
         var navbar = navigationController?.navigationBar
         //navbar.barTintColor = UIColor.darkGray
         // Override point for customization after application launch.
-        navbar?.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         // Sets shadow (line below the bar) to a blank image
-        navbar?.shadowImage = UIImage()
+        navigationController?.navigationBar.shadowImage = UIImage()
         // Sets the translucent background color
-        navbar?.barTintColor = UIColor(red: 65.0, green: 68.0, blue: 72.0, alpha: 1.0)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 65.0, green: 68.0, blue: 72.0, alpha: 1.0)
         // Set translucent. (Default value is already true, so this can be removed if desired.)
-        navbar?.isTranslucent = true
+        navigationController?.navigationBar.isTranslucent = true
         
         /// <TEMP>
-        let vc = storyboard?.instantiateViewController(withIdentifier: "AppNavController") as! UITabBarController
-        
-    
-        //let navigationController = UINavigationController(rootViewController: vc!)
-        present(vc, animated: true, completion: nil)
+        //let vc = storyboard?.instantiateViewController(withIdentifier: "AppNavController") as! UITabBarController
+        //present(vc, animated: true, completion: nil)
         /// </TEMP>
     }
 
@@ -49,8 +46,7 @@ class ESHostViewController: UIViewController {
     }
     
     @IBAction func onSkipButtonPress(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "AppNavController") as! UINavigationController
-        //let navigationController = UINavigationController(rootViewController: vc!)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AppNavController") as! UITabBarController
         present(vc, animated: true, completion: nil)
     }
 }

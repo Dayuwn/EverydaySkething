@@ -54,9 +54,8 @@ class ESSignupViewController: UIViewController {
                 return
             }
             
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ESMainViewController")
-            let navigationController = UINavigationController(rootViewController: vc!)
-            self.present(navigationController, animated: true, completion: nil)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AppNavController") as! UITabBarController
+            self.present(vc, animated: true, completion: nil)
             
             return
         }
